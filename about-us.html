@@ -3,56 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adventure Escape SA - About Us</title>
+  <title>About Us - Adventure Escape SA</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <header>
-    <img src="images/logo.jpg" alt="Adventure Escape SA Logo" width="60" height="60">
-    <p><strong>ADVENTURE<br>ESCAPE SA</strong></p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
+  <header class="topbar">
+  <div class="brand-side">
+    <img src="images/logo.jpg" alt="Logo">
+    <div class="brand-text">
+  <div class="adv-wrap"><span class="o-line"></span><strong>ADVENTURE</strong><span class="o-line"></span></div>
+  <div class="esc-text">ESCAPE SA</div>
+</div>
+    <nav class="main-nav">
+     <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about-us.html">About</a>
       <a href="overview.html">Overview</a>
       <a href="packages.html">Packages</a>
       <a href="fees.html">Fees</a>
-      <a href="contact-us.html">Contact Us</a>
+      <a href="contact-us.html">Contact</a>
     </nav>
   </header>
 
-  <!-- YOUR NEW BANNER IMAGE -->
-  <section>
-    <img src="images/about-us.PNG" alt="About Us Banner - Explore Discover Experience" width="100%">
+  <!-- BIGGER BANNER -->
+  <section class="hero-banner">
+    <img src="images/about-us.PNG" alt="About Us Banner">
+    <div class="hero-text">
+      <h1>About Us</h1>
+      <p>Learn more about our mission, vision and story</p>
+    </div>
+    <div class="hero-right-text">
+      <h2>EXPLORE. DISCOVER.<br><span>EXPERIENCE</span></h2>
+      <small>Adventure Escape SA offers exciting outdoor adventure<br>throughout the Western Cape.</small>
+    </div>
   </section>
 
-  <section>
-    <img src="images/our story.PNG" alt="Our Story" width="300">
-    <h3>Our Story</h3>
-    <p>Adventure Escape SA is a Western Cape adventure company providing professionally guided outdoor experiences.</p>
-  </section>
+  <main class="about-container">
 
-  <section>
-    <h3>Our Mission</h3>
-    <p>To provide enjoyable, safe and memorable outdoor experiences.</p>
-    <img src="images/view.PNG" alt="Our Mission" width="300">
-    <h3>Our Vision</h3>
-    <p>To connect people with nature through exciting adventures.</p>
-  </section>
+    <!-- ROW 1: Image left, Our Story box center -->
+    <div class="about-row">
+      <img class="about-img" src="images/our story.PNG" alt="Our Story - Coastal hike">
+      <div class="info-box">
+        <div class="icon-circle"><img src="images/mountain-icon.png" alt="Our Story Icon"></div>
+        <h3>Our Story</h3>
+        <p>Adventure Escape SA is a Western Cape adventure company providing professionally guided outdoor experiences.</p>
+      </div>
 
-  <footer>
-    <img src="images/logo.jpg" alt="Adventure Escape SA Logo" width="50" height="50">
-    <p><strong>ADVENTURE ESCAPE SA</strong><br>Explore. Discover. Experience</p>
-    <h4>QUICK LINKS</h4>
-    <a href="index.html">Home</a><br>
-    <a href="overview.html">Packages</a><br>
-    <a href="about-us.html">About Us</a><br>
-    <a href="contact-us.html">Contact Us</a>
-    <h4>Contact us</h4>
-    <p>info@adventureescape.co.za</p>
-    <p>Western Cape, South Africa</p>
-    <p>+27 12 345 6789</p>
-    <p>©2024 Adventure Escape SA. All Rights Reserved.</p>
-  </footer>
+      <div class="spacer"></div>
+    </div>
 
+    <!-- ROW 2: Mission left, Image middle, Vision right -->
+    <div class="about-row">
+      <div class="info-box">
+        <div class="icon-circle"><img src="images/like.png" alt="Mission Icon"></div>
+        <h3>Our Mission</h3>
+        <p>To provide enjoyable, safe and memorable outdoor experiences.</p>
+      </div>
+
+      <img class="about-img" src="images/view.PNG" alt="Group hiking">
+
+      <div class="info-box">
+        <div class="icon-circle"><img src="images/groups-green.png" alt="Vision Icon"></div>
+        <h3>Our Vision</h3>
+        <p>To connect people with nature through exciting adventures.</p>
+      </div>
+    </div>
+  </main>
+
+ <footer class="main-footer">
+  <div class="footer-grid">
+    
+    <div class="foot-logo">
+      <img src="images/logo.jpg" alt="Adventure Escape SA Logo">
+      <div class="foot-brand">
+        <div class="foot-adventure"><span class="foot-line"></span><strong>ADVENTURE</strong><span class="foot-line"></span></div>
+        <div class="foot-escape">ESCAPE SA</div>
+        <small>Explore, Discover, Experience</small>
+      </div>
+    </div>
+
+    <div class="foot-links">
+      <h4>QUICK LINKS</h4>
+      <a href="index.html">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact-us.html">Contact</a>
+    </div>
+
+    <div class="foot-contact">
+      <h4>Contact us</h4>
+      <p>info@adventureescape.co.za</p>
+      <p>Western Cape, South Africa</p>
+      <p>+27 12 345 6789</p>
+    </div>
+
+  </div>
+  <div class="copyright">©2024 Adventure Escape SA. All Rights Reserved.</div>
+</footer>
 </body>
 </html>
