@@ -4,89 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Escape SA | Home</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../images/logo.jpg" alt="Adventure Escape SA logo">
+            <img src="../images/logo.jpg" alt="Adventure Escape SA logo" class="logo-image">
             <div>
                 <h2>Adventure</h2>
-                <h3>Escape SA</h3>
+                <div class="logo-subtitle">
+                   <h3><b>Escape SA</b></h3>
+                </div>
             </div>
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="about-us.html">About</a>
+            <a href="about.html">About</a>
             <a href="overview.html">Overview</a>
             <a href="packages.html">Packages</a>
             <a href="fees.html">Fees</a>
             <a href="contact-us.html">Contact</a>
         </nav>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
     <main>
-        <section>
-            <img src="images/hero.png" alt="Beautiful mountain and ocean scenery in the Western Cape">
-            <h1>Explore. Discover. <br> Experience.</h1>
-            <p>Adventure Escape SA offers exciting outdoor <br> adventures throughout the Western Cape.</p>
-            <div>
-                <a href="packages.html" class="btn">Book an activity</a>
-                <a href="contact.html" class="btn">Contact</a>  
+        <section id="hero-container">
+            <img src="images/hero.png" alt="Beautiful mountain and ocean scenery in the Western Cape" class="hero-image">
+            <div class="hero-content">
+                <h2>Explore. Discover.</h2>
+                <h1>Experience</h1>
+                <p>Adventure Escape SA offers exciting outdoor <br> adventures throughout the Western Cape.</p><br>
+                <div class="hero-buttons">
+                    <button id="activity-button">Book an activity</button>
+                    <button id="quote-button">Request a quote</button>
+                </div>
             </div>
         </section>
-        <section> 
-            <div>
+        <br>
+        <section id="experience-container"> 
+            <div class="nature">
                 <img src="images/mountain-icon.png" alt="mountain icon">
                 <h3>NATURE</h3>
                 <p>Experience the beauty of <br> the great outdoors.</p>
             </div>
-            <div>
+            <div class="adventure">
                 <img src="images/wave.png" alt="wave icon">
                 <h3>ADVENTURE</h3>
                 <p>Thrilling activities for <br> every adventure</p>
             </div>
-            <div>
+            <div class="groups">
                 <img src="images/groups-orange.png" alt="groups icon">
                 <h3>GROUPS</h3>
                 <p>Perfect for schools, <br> corporates & families.</p>
             </div>
-            <div>
+            <div class="reliable">
                 <img src="images/security.png" alt="security icon">
                 <h3>SAFE & RELIABLE</h3>
                 <p>Your safety is our <br> top priority.</p>
             </div>
         </section>
-        <section>
+        <br>
+        <br>
+        <section id="our-activities">
             <h2>Our Activities</h2>
             <h3>Choose Your Adventure</h3>
-            <div>
-                <img src="images/hiking-image.png" alt="Hiking Adventure">
-                <img src="images/hiking-icon.png" alt="Hiking icon">
-                <h3>Hiking Tours</h3>
-            </div>
-            <div>
-                <img src="images/canoeing-image.png" alt="Kayaking Adventure">
-                <img src="images/canoeing-icon.png" alt="Kayaking icon">
-                <h3>Kayaking</h3>
-            </div>
-            <div>
-                <img src="images/ziplining-image.png" alt="Ziplining Adventure">
-                <img src="images/zipline-icon.png" alt="Zplining icon">
-                <h3>Ziplining</h3>
-            </div>
-            <div>
-                <img src="images/rockClimbing-image.png" alt="Rock climbing Adventure">
-                <img src="images/rockClimbing-icon.png" alt="Rock climbing icon">
-                <h3>Rock Climbing</h3>
-            </div>
-            <div>
-                <img src="images/penguins-image.png" alt="Penguins Image">
-                <img src="images/wave-icon.png" alt="wave icon">
-                <h3>Beach Adventures</h3>
+            <p class="line"></p>
+            <div class="our-activities">
+                <div class="activities-card">
+                    <img src="images/hiking-image.png" alt="Hiking Adventure" class="activity-img">
+                    <img src="images/hiking-icon.png" alt="Hiking icon" class="icon"><br>
+                    <h3>Hiking Tours</h3>
+                </div>
+                <div class="activities-card">
+                    <img src="images/canoeing-image.png" alt="Kayaking Adventure" class="activity-img">
+                    <img src="images/canoeing-icon.png" alt="Kayaking icon" class="icon"><br>
+                    <h3>Kayaking</h3>
+                </div>
+                <div class="activities-card">
+                    <img src="images/ziplining-image.png" alt="Ziplining Adventure" class="activity-img">
+                    <img src="images/zipline-icon.png" alt="Zplining icon" class="icon"><br>
+                    <h3>Ziplining</h3>
+                </div>
+                <div class="activities-card">
+                    <img src="images/rockClimbing-image.png" alt="Rock climbing Adventure" class="activity-img">
+                    <img src="images/rockClimbing-icon.png" alt="Rock climbing icon" class="icon"><br>
+                    <h3>Rock Climbing</h3>
+                </div>
+                <div class="activities-card">
+                    <img src="images/penguins-image.png" alt="Penguins Image" class="activity-img">
+                    <img src="images/wave-icon.png" alt="wave icon" class="icon"><br>
+                    <h3>Beach Adventures</h3>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>WHY CHOOSE US?</h2>
-            <p>We create unforgettable experiences that <br> connect people with nature while ensuring <br> safety, fun and lasting memories.</p>
+        <br>
+        <br>
+        <section id="whyChooseUs">
+            <div>
+                <h2>WHY CHOOSE US?</h2>
+                <p>We create unforgettable experiences that <br> connect people with nature while ensuring <br> safety, fun and lasting memories.</p>
+            </div>
+             <p class="whyChooseUs-line"></p>
             <div>
                 <img src="images/groups-green.png" alt="groups icon">
                 <h3>EXPERIENCED GUIDES</h3>
@@ -111,34 +129,45 @@
     </main>
     <footer>
         <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/logo.jpg" alt="Adventure Escape Logo">
-                <div>
-                    <h2>Adventure</h2>
-                    <h3>Escape SA</h3>
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="Adventure Escape Logo" class="logo-image">
+                    <div>
+                        <h2>Adventure</h2>
+                        <div class="logo-subtitle">
+                           <h3><b>Escape SA</b></h3>
+                        </div>
+                    </div>
+                </div>
+                <h3>Explore. Discover. Experience.</h3>
+            </div>
+    
+            <div class="footer-links">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>CONTACT</h3>
+                <div class="contact-item">
+                    <img src="images/phone-call.png" alt="phone icon">
+                    <p>+27 12 345 6789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="images/email.png" alt="email icon">
+                    <p>info@adventureescapesa.co.za</p> 
+                </div>
+                <div class="contact-item">
+                    <img src="images/location-white.png" alt="location icon">
+                    <p>Western Cape, South Africa</p>  
                 </div>
             </div>
-            <h3>Explore. Discover. Experience.</h3>
-        </div>
-        <div class="footer-links">
-            <h3>QUICK LINKS</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="overview.html">Overview</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="fees.html">Fees</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-contact">
-            <h3>CONTACT</h3>
-            <img src="images/phone-call.png" alt="phone icon">
-            <p>+27 12 345 6789</p>
-            <img src="images/email.png" alt="email icon">
-            <p>info@adventureescapesa.co.za</p> 
-            <img src="images/location-white.png" alt="location icon">
-            <p>Western Cape, South Africa</p>  
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Adventure Escape SA. All Rights Reserved.</p>

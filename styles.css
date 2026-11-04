@@ -13,7 +13,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 12px;
   background-color: #14532D; 
 }
 .logo-container {
@@ -479,7 +479,7 @@ nav a.active {
 footer {
   background: #14532D;
   color: white;
-  padding: 40px 20px 20px;
+  padding: 10px 8px 8px;
 }
 .footer-content {
   max-width: 1100px;
@@ -535,8 +535,8 @@ footer {
 }
 .footer-bottom {
   text-align: center;
-  margin-top: 35px;
-  padding-top: 20px;
+  margin-top: 12px;
+  padding-top: 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 13px;
   color: #8FB996;
@@ -798,3 +798,268 @@ footer {
     font-size: 20px;
   }
 }
+
+/* Zusange's css*/
+
+.logo-image{
+  width:70px;
+  height:50px;
+  margin-right:10px;
+}
+.logo{
+  display:flex;
+  background-color: #ffffff;
+  gap:40px;
+  width:24%;
+  height:100%;
+  box-sizing:border-box;
+  align-self: stretch;
+  padding:10px 12px;
+  margin:-10px 0 -10px -12px;
+  clip-path:polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+.logo h2{
+  color:#14532D;
+  font-size:medium;
+}
+.logo > div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-subtitle{
+  display:flex;
+  color:#0077b6;
+  align-items: center;
+  justify-content: center;
+  font-size:12px;
+  gap:8px;
+  font-weight:bolder;
+  margin:0;
+  white-space: nowrap;
+}
+.logo-subtitle::before, .logo-subtitle::after{
+  content:'';
+  display:block;
+  width:30px;
+  height:2px;
+  background-color: #d97706;
+  flex-shrink:0;
+}
+.nature::after, .adventure::after, .groups::after{
+  content:'';
+  position:absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  width:1px;
+  height:50px;
+  background-color:#c2c5c8;
+}
+.nature, .adventure, .groups, .reliable{
+  position:relative;
+  flex:1;
+  text-align:center;
+}
+.hero-image{
+  height:480px;
+  width:100%;
+}
+.hero-content{
+  position:absolute;
+  top:26%;
+  left:80%;
+  transform:translate(-50%, -50%);
+  z-index:2;
+  text-align:right;
+
+}
+
+.hero-content h2{
+  color:#ffffff;
+  font-weight: 400;
+  font-size: 35px;
+}
+.hero-content h1{
+  color:#d97706;
+  font-family: inherit;
+  text-align: center;
+  margin-top:5px;
+ 
+}
+.hero-content p{
+  color:#ffffff;
+  font-weight: 100;
+}
+#activity-button{
+  background-color: #d97706;
+  color:#ffffff;
+  border-radius:12px;
+  padding:10px 15px;;
+  border:none;
+}
+#quote-button{
+  background-color: transparent;
+  border-radius:12px;
+  padding:10px 15px;
+  border:1px solid #ffffff;
+  color:#ffffff;
+}
+.hero-buttons{
+  display:flex;
+  justify-content: flex-end;
+  gap:35px;
+  padding-top: 28px;
+}
+#experience-container{
+  display:flex;
+  justify-content: space-around;
+}
+#experience-container img{
+  width:50px;
+  height:50px;
+}
+#experience-container p{
+  font-size:10px;
+}
+#experience-container h3{
+  font-size:12px;
+}
+.nature h3{
+  color:#14532D;
+}
+.nature p, .adventure p, .groups p, .reliable p{
+  color:#1f2933;
+}
+.adventure h3{
+  color:#0077b6;
+}
+.groups h3{
+  color:#d97706;
+}
+.reliable h3{
+  color:#14532D;
+}
+
+.our-activities{
+  display:flex;
+  gap:20px;
+  justify-content: space-around;
+}
+#our-activities{
+  background-color:#def1f5; 
+  height:420px;
+}
+#our-activities h2{
+  color:#14532D;
+}
+#our-activities h2, h3{
+  text-align: center;
+}
+.activity-img{
+  width:200px;
+  height:130px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+ .icon{
+  display:block;
+  margin: -25px auto 0;
+  width:50px;
+  height:50px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.line{
+  border:2px solid #d97706;
+  width:3%;
+  margin:16px auto;
+
+}
+#orange-line{
+  border-top:2px solid #d97706;
+  width:20%;
+  margin:2px auto;
+}
+.activities-card{
+  background-color: #ffffff;
+  height:250px;
+  width:200px;
+  border-radius: 10px;;
+
+}
+#whyChooseUs{
+  display:flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+#whyChooseUs h2{
+  font-size:medium;
+  color:#14532D;
+}
+#whyChooseUs img{
+  width:30px;
+  height:30px;
+
+}
+#whyChooseUs h3{
+  color:#14532D;
+  font-size:small;
+}
+
+#whyChooseUs p{
+  margin-right:15px;
+  font-size:10px;
+  color:#1f2933;
+}
+.whyChooseUs-line{
+  border-right:2px solid #d97706;
+  height:100px;
+  display:block;
+}
+.footer-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size:12px;
+  padding:0 20px;
+}
+.footer-brand > h3{
+  margin-top:10px;
+  margin-left:0;
+}
+.footer-contact img{
+  width:10px;
+  height:10px;
+}
+.footer-logo{
+  display:flex;
+  gap:15px;
+  margin-bottom:20px;
+}
+.footer-logo h2{
+  text-align: center;
+}
+.footer-links ul{
+  list-style: none;
+}
+.footer-links a{
+  font-size:10px;
+}
+.contact-item{
+  display:flex;
+  align-items: center;
+  gap:8px;
+  margin:8px 0;
+}
+.contact-item p{
+  font-size:10px;
+}
+/* HAMBURGER BUTTON - HIDDEN ON DESKTOP */
+
+.menu-toggle {
+    display: none;
+}
+
+
