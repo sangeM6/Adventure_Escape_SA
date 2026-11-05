@@ -1283,7 +1283,7 @@ footer {
 .page-directions{
   display:flex;
   gap:20px;
-  margin:40px;
+  margin:20px;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -1349,9 +1349,11 @@ footer {
   margin-bottom: 15px;;
 }
 .details textarea{
-  padding:40px;
+  padding:10px;
   width:80%;
   color:gray;
+  text-align: left;
+  height:100px;
   
 }
 .quantity-selector button{
