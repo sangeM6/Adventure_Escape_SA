@@ -1079,11 +1079,11 @@ footer {
   color:#d97706;
 
 }
-.contact-content h1, h5{
+.contact-content h1,.contact-content h5{
   text-align:center;
 
 }
-.contact-content p, h5{
+.contact-content p,.contact-content h5{
   color:#ffffff;
 }
 .information{
@@ -1277,4 +1277,114 @@ footer {
   padding:5px;
   border:none;
   margin:2px;
+}
+
+/*booking page css*/
+.page-directions{
+  display:flex;
+  gap:20px;
+  margin:40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+#page-container h3 ,#page-container p{
+  text-align: center;
+}
+
+.bookings{
+  border:1px solid #1f2933;
+  width:43%; 
+  border-radius: 8px;
+}
+#booking-container{
+  display:flex;
+  gap:30px;
+  margin-top: 40px;;
+  justify-content: space-around;
+  margin:20px;
+}
+.bookings p{
+  font-size:12px;
+}
+.bookings h3{
+  color:#14532D;
+  font-size:14px;
+}
+#booking-container h5{
+  color:#14532D;
+}
+.adventure2{
+  border-top: 1px solid #1f2933;
+  margin:5px;
+  padding:8px;
+}
+.adventure1{
+  margin:5px;
+  padding:8px;
+}
+.booking-total{
+  color:#14532D;
+  border-top: 1px solid #1f2933;
+  margin:10px;
+}
+.details{
+  border: 1px solid #1f2933;
+  width:43%;
+  padding:10px;
+  border-radius: 8px;
+  
+}
+.details label{
+  font-size:12px;
+}
+.details input{
+  padding:8px;
+  width:80%
+}
+.details select{
+  padding:8px;
+  width:80%;
+  margin-bottom: 15px;;
+}
+.details textarea{
+  padding:40px;
+  width:80%;
+  color:gray;
+  
+}
+.quantity-selector button{
+  padding:5px;
+}
+.quantity-selector{
+  display:flex;
+  gap:20px;
+  
+}
+#terms-container{
+  border:1px solid #1f2933;
+  width:92%;
+  padding:10px;
+  margin:20px auto
+}
+#terms-container a{
+  text-decoration: none;
+  color:#1f2933;
+  font-size: 20px;;
+  margin-left:8px;
+  
+}
+.booking-request-btn button{
+  margin:30px auto;
+  display:block;
+  padding:10px;
+  background-color: #d97706;
+  color:#1f2933;
+  border:none;
+  border-radius:6px;
+  width:40%
+}
+#terms-container form{
+  text-align: left;
 }
