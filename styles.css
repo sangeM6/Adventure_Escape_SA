@@ -1388,3 +1388,59 @@ footer {
 #terms-container form{
   text-align: left;
 }
+
+/*FAQ css */
+#faq-titles{
+  text-align: center;
+}
+#faq-titles h2{
+  color:#0077b6;
+  margin-top: 50px;
+  font-size:22px;
+}
+#faq-titles p{
+  color:#1f2933;
+  font-size:12px;
+  margin-bottom:40px;
+}
+.question-card{
+  border:1px solid #1f2933;
+  width:50%;
+  margin:0 auto;
+  padding:10px;
+  margin-bottom:20px;
+  border-radius: 5px;;
+  
+}
+.question-sub-container{
+  border:1px solid #1f2933;
+  width:50%;
+  margin:0 auto;
+  margin-bottom:20px;
+  padding:12px;
+  border-radius: 5px;
+}
+.question-sub-container button{
+  margin: 0 auto;
+  display:block;
+  text-align: center;
+  padding:10px;
+  background-color: #d97706;
+  color:#1f2933;
+  border:none;
+  width:20%;
+  border-radius:5px;
+ 
+}
+
+.question-sub-container p{
+  text-align:center;
+  margin-bottom:20px;
+  font-size:14px;
+}
+.question-sub-container h3{
+  color:#0077b6;
+  font-size:16px;
+  margin-bottom:10px;
+  margin-top:5px;
+}
