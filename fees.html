@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-         <nav>
+          <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="overview.html">Overview</a>
@@ -27,6 +27,7 @@
             <a href="individual.html">Individual</a>
             <a href="book.html">Booking</a>
             <a href="terms.html">T&Cs</a>
+            <a href="faq.html">FAQs</a>
             <a href="privacy.html">Privacy</a>
             <a href="contact-us.html">Contact</a>
             <a href="confirmation.html">Thank you</a>
@@ -34,58 +35,65 @@
         <button class="menu-toggle" id="menu-toggle">☰</button>
     </header>
     <main>
-        <section>
+        <section id="selection-title">
             <h2>Your Selections</h2>
-            <div>
-                <strong>Experience</strong>
-                <strong>Price</strong>
-                <strong>Quantity</strong>
-                <strong>Total</strong>
-            </div>
-            <div>
-                <p>Ultimate Adventure Day</p>
-                <p>R1 500</p>
-                <div>
-                    <button type="button" aria-label="Decrease ultimate adventure day quantity">-</button>
-                    <span>1</span>
-                    <button type="button" aria-label="Increase ultimate adventure day quantity">+</button>
+        </section>
+
+        <section>
+            <div class="subtitle-container">
+                <div id="selection-subtitle">
+                    <strong>Experience</strong>
+                    <strong>Price</strong>
+                    <strong>Quantity</strong>
+                    <strong>Total</strong>
                 </div>
-                <p>R1 500</p>
-            </div>
-            <div>
-                <p>Kayaking</p>
-                <p>R  750</p>
-                <div>
-                    <button type="button" aria-label="Decrease kayaking quantity">-</button>
-                    <span>2</span>
-                    <button type="button" aria-label="Increase kayaking quantity">+</button>
+                <div class="adventure-experience">
+                    <p>Ultimate Adventure Day</p>
+                    <p>R1 500</p>
+                    <div>
+                        <button type="button" aria-label="Decrease ultimate adventure day quantity">-</button>
+                        <span>1</span>
+                        <button type="button" aria-label="Increase ultimate adventure day quantity">+</button>
+                    </div>
+                    <p>R1 500</p>
                 </div>
-                <p>R1 500</p>
-            </div>
-            <div>
-                <h3>Order Summary</h3>
-                <p>Subtotal: <span>R3 000</span></p>
-                <p>Discount: <span>10%</span></p>
-                <p>Discount Amount: <span>-R  300</span></p>
-                <p><strong>Total: <span>R2 700</span></strong></p>
+                <div class="adventure-experience">
+                    <p>Kayaking</p>
+                    <p>R  750</p>
+                    <div>
+                        <button type="button" aria-label="Decrease kayaking quantity">-</button>
+                        <span>2</span>
+                        <button type="button" aria-label="Increase kayaking quantity">+</button>
+                    </div>
+                    <p>R1 500</p>
+                </div>
+                <div class="orderSummary-title">
+                    <h3>Order Summary</h3>
+                </div>
+                <div class="order-amount">
+                    <p>Subtotal: <span>R3 000</span></p>
+                    <p>Discount: <span>10%</span></p>
+                    <p class="discount">Discount Amount: <span>-R  300</span></p>
+                </div>
+                <div class="total-amount">
+                    <p>Total: <span>R2 700</span></p>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="details-title">
             <h2>Your Details</h2>
+        </section>
+        <section id="details-section">
             <form>
-                <div>
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                <label for="fullName">Your Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+                <div class="details-button">
+                    <button type="submit">Submit Booking Request</button>
                 </div>
-                <div>
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                </div>
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
-                <button type="submit">Submit Booking Request</button>
             </form>
         </section>
     </main>
