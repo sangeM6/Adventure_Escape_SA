@@ -1188,3 +1188,93 @@ footer {
   display:block;
   margin-bottom: 20px;
 }
+
+/* Selection page css*/
+#selection-title{
+  color:#14532D;
+  margin:25px;
+  text-align: center;
+}
+#selection-subtitle{
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #14532D;
+  margin:15px;
+  color:white;
+}
+.subtitle-container{
+  border:1px solid #1f2933;
+  width: 50%;
+  margin:10px auto;
+
+}
+.adventure-experience{
+  display:flex;
+  justify-content: space-evenly;
+  padding:10px;
+
+}
+.orderSummary-title{
+  text-align: start;
+  justify-content: right;
+  border-top: 1px solid #1f2933;
+}
+.order-amount p{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px;
+}
+.order-amount{
+  border-bottom: 1px solid #1f2933;
+  margin:10px;
+}
+.discount{
+  color:#0077b6;
+}
+.total-amount p{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px;
+  color:#14532D
+}
+#details-section{
+  border:1px solid #1f2933;
+  width:50%;
+  margin:10px auto;
+  padding:18px;
+}
+#details-section{
+  margin-bottom: 18px;
+}
+#details-section label{
+  font-size:12px;
+}
+#details-section input{
+  width:60%;
+  padding:8px;
+  margin-bottom: 10px;;
+}
+.details-title h2{
+  text-align: center;
+  color:#14532D;
+}
+.details-button button{
+  background-color: #d97706;
+  color:#1f2933;
+  border:none;
+  border-radius:5px;
+  width:60%;
+  padding:10px 12px;
+  margin:10px;
+  display:block;
+
+}
+.adventure-experience button{
+  background-color: #d97706;
+  color:#ffffff;
+  padding:5px;
+  border:none;
+  margin:2px;
+}
