@@ -2655,3 +2655,53 @@ footer {
     font-size: 12px;
 }
 }
+/* SELECTED EXPERIENCES */
+
+.subtitle-container {
+    overflow: hidden;
+}
+
+.adventure-experience {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.adventure-experience p {
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-experience div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.adventure-experience button {
+    background-color: #d97706;
+    color: #ffffff;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.adventure-experience button:hover {
+    background-color: #b86505;
+}
+
+.adventure-experience span {
+    min-width: 20px;
+    text-align: center;
+}
+
+.orderSummary-title h3 {
+    text-align: left;
+    padding: 12px;
+    color: #14532D;
+}

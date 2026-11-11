@@ -7,6 +7,7 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <script src="script.js" defer></script>
    <header>
         <div class="logo">
             <img src="../images/logo.jpg" alt="Adventure Escape SA logo" class="logo-image">
@@ -45,40 +46,30 @@
             <h3>Booking</h3>
             <p>Review your adventures and submit your booking request.</p>
         </section>
+
         <section id="booking-container">
-            <div class="bookings">
-                <div class="adventure1">
-                    <h3>YOUR BOOKING SUMMARY</h3>
-                    <h5>Adventure 1</h5><br>
-                    <h6>Ultimate Adventure Day</h6>
-                    <p>Price: R1 500</p>
-                    <p>Quantity: 1</p><br>
-                    <p>Total: R1 500</p>
-                </div>
-                <div class="adventure2">
-                    <h5>Adventure 2</h5><br>
-                    <h6>Kayaking</h6>
-                    <p>Price: R750</p>
-                    <p>Quantity: 2</p><br>
-                    <p>Total: R1 500</p>
-                </div>
-                <div class="booking-total">
-                    <p>TOTAL: R3 000</p>
+            <div class="bookings" id="bookings-summary">
+                <h3>YOUR BOOKING SUMMARY</h3>
+                <div id="booking-summary-content">
+                    <!-- JavaScript will display selected experiences here -->
                 </div>
             </div>
             <div class="details">
                 <h3>BOOKING DETAILS</h3>
-                <form>
+                <form id="booking-details-form">
+
                     <label>Preferred Date</label><br>
-                    <input type="text" placeholder="DD/MM/YYYY"><br>
+                    <input type="date" id="preferred-date" name="preferredDate" required><br>
+
                     <label>Number of Participants</label><br>
                     <div class="quantity-selector">
-                        <button type="button">-</button>
+                        <button type="button" id="decrease-participants">-</button>
                         <span id="participants">0</span>
-                        <button type="button">+</button>
+                        <button type="button" id="increase-participants">+</button>
+                        <input type="hidden" id="participant-count" name="participants">
                     </div>
                     <label>Preferred Time</label><br>
-                    <select id="Time">
+                    <select id="Time" name="preferredTime" required>
                         <option value="">Select Time</option>
                         <option value="09:00">09:00 AM</option>
                         <option value="10:00">10:00 AM</option>
@@ -90,18 +81,18 @@
                         <option value="16:00">16:00 PM</option>
                     </select><br>
                     <label>Special Requests (Optional) </label><br>
-                    <textarea placeholder="Enter your requests..."></textarea>
+                    <textarea name="specialRequests" placeholder="Enter your requests..."></textarea>
                 </form>
             </div>
         </section>
         <section id="terms-container">
             <form>
-                <input type="checkbox">
-                <label>I agree to the Terms and Conditions</label>
+                <input type="checkbox" id="agree-terms" form="booking-details-form" required>
+                <label for="agree-terms">I agree to the Terms and Conditions</label>
             </form>
             <p>Read Terms and Conditions  <a href="terms.html">→</a></p>
             <div class="booking-request-btn">
-                <button type="button">Submit Booking Request</button>
+                <button type="submit" form="booking-details-form">Submit Booking Request</button>
             </div>
         </section>
     </main>
