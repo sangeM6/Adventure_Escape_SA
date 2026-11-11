@@ -802,7 +802,7 @@ footer {
 /* Zusange's css*/
 
 .logo-image{
-  width:70px;
+  width:50px;
   height:50px;
   margin-right:10px;
 }
@@ -820,7 +820,7 @@ footer {
 }
 .logo h2{
   color:#14532D;
-  font-size:medium;
+  font-size:small;
 }
 .logo > div{
   display:flex;
@@ -832,7 +832,7 @@ footer {
   color:#0077b6;
   align-items: center;
   justify-content: center;
-  font-size:12px;
+  font-size:9px;
   gap:8px;
   font-weight:bolder;
   margin:0;
@@ -1213,8 +1213,8 @@ footer {
   display:flex;
   justify-content: space-evenly;
   padding:10px;
-
 }
+
 .orderSummary-title{
   text-align: start;
   justify-content: right;
@@ -1275,7 +1275,7 @@ footer {
 .adventure-experience button{
   background-color: #d97706;
   color:#ffffff;
-  padding:5px;
+  padding:8px 10px;
   border:none;
   margin:2px;
 }
@@ -1767,8 +1767,165 @@ footer {
     width: 90%;
     box-sizing: border-box;
 }
+/* CONTACT INFORMATION */
 
-    
+    #contact-info {
+        height: auto;
+        padding: 10px;
+
+    }
+
+    #information {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+
+    }
+
+    .information {
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    #contact-info img {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+
+    }
+
+    .information p {
+        font-size: 11px;
+        line-height: 1.3;
+
+    }
+
+    /* ENQUIRY FORM */
+
+    #form-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        box-sizing: border-box;
+
+    }
+
+    #form-container form {
+        margin-left: 0;
+
+    }
+
+    #form-container input,
+    #form-container select,
+    #form-container textarea {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    #form-container button {
+        width: 55%;
+
+    }
+  /* FAQ QUESTION SUB CONTAINER */
+  .question-sub-container {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .question-sub-container h3 {
+    font-size: 14px;
+  }
+
+  .question-sub-container p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+.question-sub-container button {
+    width: 35%;
+    padding: 9px 12px;
+    font-size: 11px;
+} 
+  /* SUBTITLE CONTAINER */
+.subtitle-container {
+    width: 90%;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+#selection-subtitle {
+    margin: 10px;
+    padding: 9px;
+    gap: 8px;
+}
+
+#selection-subtitle h2,
+#selection-subtitle h3,
+#selection-subtitle p {
+    font-size: 12px;
+}
+
+.adventure-experience {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 8px;
+}
+
+.adventure-experience p,
+.adventure-experience span {
+    font-size: 11px;
+}
+
+.adventure-experience button {
+    padding: 2px 2px;
+    font-size: 10px;
+}
+
+.orderSummary-title h3,
+.order-amount p,
+.total-amount p {
+    font-size: 12px;
+}
+
+.order-amount p,
+.total-amount p {
+    margin: 12px 8px;
+}
+
+/* DETAILS SECTION */
+#details-section {
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.details-title h2 {
+    font-size: 16px;
+}
+
+#details-section label {
+    font-size: 10px;
+}
+
+#details-section input,
+#details-section select,
+#details-section textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+.details-button button {
+    width: 80%;
+    padding: 13px 14px;
+    font-size: 11px;
+} 
+  
 
 }
 
@@ -1794,8 +1951,8 @@ footer {
 
     /* LOGO IMAGE */
     header .logo .logo-image {
-        width: 28px;
-        height: 28px;
+        width: 20px;
+        height: 20px;
         flex-basis: 28px;
     }
 
@@ -1974,7 +2131,266 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
+/* CONTACT INFORMATION */
 
+    #contact-info {
+        height: auto;
+        padding: 10px 8px;
+    }
+
+    #information {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .information {
+        align-items: center;
+        gap: 6px;
+    }
+
+    #contact-info img {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+    }
+
+    .information p {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    /* ENQUIRY FORM */
+
+    #form-container {
+        width: 94%;
+        margin: 18px auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    #form-container form {
+        margin-left: 0;
+    }
+
+  #form-container input,
+  #form-container select,
+  #form-container textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #form-container button {
+    width: 65%;
+  }
+  #faq-question-container{
+    width:90%;
+    gap:14px;
+  }
+  .question-card{
+    width:100%;
+  }
+  .faq-question p{
+    font-size:14px;
+  }
+  .faq-answer p{
+    font-size:12px;
+    line-height:1.5;
+  }
+  /* FAQ QUESTION SUB CONTAINER */
+.question-sub-container {
+    width: 94%;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.question-sub-container h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.question-sub-container p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.question-sub-container button {
+    width: 50%;
+    padding: 8px 10px;
+    font-size: 11px;
+}
+  /* SUBTITLE CONTAINER */
+.subtitle-container {
+    width: 100%;
+    padding: 14px 12px;
+    box-sizing: border-box;
+}
+
+  #selection-subtitle {
+    margin: 8px;
+    padding: 8px 5px;
+    gap: 5px;
+  }
+
+
+  #selection-subtitle h2,
+  #selection-subtitle strong,
+  #selection-subtitle h3,
+  #selection-subtitle p {
+    font-size: 10px;
+  }
+
+  .adventure-experience {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 5px;
+  }
+
+  .adventure-experience p,
+  .adventure-experience span {
+    font-size: 10px;
+    line-height:1.3;
+    margin-top:0;
+    margin-bottom:0;
+  }
+
+  .adventure-experience button {
+    padding: 2px 2px;
+    font-size: 10px;
+    min-height:20px;
+    min-width:20px
+  }
+
+  .orderSummary-title h3,
+  .order-amount p,
+  .total-amount p {
+    font-size: 11px;
+  }
+
+  .order-amount p,
+  .total-amount p {
+    margin: 10px 5px;
+  }
+
+/* DETAILS SECTION */
+#details-section {
+    width: 96%;
+    padding: 16px 12px;
+    margin: 12px auto;
+    box-sizing: border-box;
+}
+
+.details-title h2 {
+    font-size: 14px;
+}
+
+#details-section label {
+    font-size: 10px;
+}
+
+#details-section input,
+#details-section select,
+#details-section textarea {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.details-button button {
+    width: 90%;
+    padding: 13px 12px;
+    font-size: 10px;
+}
+  /* FOOTER Contact*/
+  .footer-contact{
+    width:100%;
+    text-align:center;
+  }
+  .footer-contact h3{
+    font-size:12px;
+    margin-bottom:8px;
+  }
+  .contact-item{
+    justify-content:center;
+    gap:7px;
+    margin:8px 0;
+  }
+  .footer-contact img{
+    width:12px;
+    height:12px;
+    flex-shrink:0;
+  }
+  .contact-item p{
+    font-size:10px;
+    overflow-wrap:anywhere;
+  }
+  /* Copyright*/
+  .footer-bottom{
+    margin-top:15px;
+    padding-top:8px;
+    font-size:9px;
+  }
+  /*Footer links*/
+  .footer-links{
+    width:100%;
+    text-align:center;
+  }
+  .footer-links h3{
+    font-size:12px;
+    margin-bottom:8px;
+  }
+  .footer-links ul{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items:center;
+  }
+  .footer-links a{
+    font-size:10px;
+    margin:3px 0;
+  }
+  /*Footer brand*/
+  .footer-brand{
+    width:100%;
+    text-align:center;
+  }
+  .footer-logo{
+    justify-content:center;
+    gap:8px;
+    margin-bottom:8px;
+  }
+  .footer-logo .logo-image{
+    width:42px;
+    height:42px;
+  }
+  .footer-logo h2{
+    font-size:14px;
+  }
+  .footer-logo .logo-subtitke h3{
+    font-size:10px;
+  }
+  .footer-brand > h3{
+    font-size:11px;
+    margin-top:5px;
+  }
+  footer{
+    padding:18px 10px 8px;
+  }
+  .footer-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
+    padding:0 5px;
+    text-align:center;
+  }
 }
 
 /* =================================
@@ -1982,6 +2398,22 @@ footer {
 ================================= */
 
 @media (max-width: 1024px) {
+
+   /* LOGO IMAGE */
+    header .logo .logo-image {
+        width: 20px;
+        height: 20px;
+        flex-basis: 28px;
+    }
+
+    /* LOGO TITLES */
+    header .logo h2 {
+        font-size: 8px;
+    }
+
+    header .logo .logo-subtitle h3 {
+        font-size: 6px;
+    }
 
     /* HEADER */
     header {
@@ -2016,19 +2448,19 @@ footer {
     }
 
    /* HOMEPAGE HERO */
-#hero-container {
+  #hero-container {
     position: relative;
     height: 420px;
     overflow: hidden;
 }
 
-#hero-container .hero-image {
+  #hero-container .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#hero-container .hero-content {
+  #hero-container .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2040,24 +2472,186 @@ footer {
     z-index: 2;
 }
 
-#hero-container .hero-content h1 {
+  #hero-container .hero-content h1 {
     font-size: 20px;
     line-height: 1.2;
 }
 
-#hero-container .hero-content h2 {
+  #hero-container .hero-content h2 {
     font-size: 18px;
     line-height: 1.2;
 }
 
-#hero-container .hero-content p {
+  #hero-container .hero-content p {
     font-size: 11px;
     line-height: 1.4;
 }
 
-#hero-container .hero-buttons {
+  #hero-container .hero-buttons {
     justify-content: center;
     gap: 10px;
 }
+ /* CONTACT INFORMATION */
 
+    #contact-info {
+        height: auto;
+        padding: 10px 15px;
+
+    }
+
+    #information {
+        gap: 8px;
+        align-items: center;
+
+    }
+
+    .information {
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    #contact-info img {
+        width: 17px;
+        height: 17px;
+        flex-shrink: 0;
+
+    }
+
+    .information p {
+        font-size: 12px;
+        line-height: 1.3;
+
+    }
+
+    /* ENQUIRY FORM */
+    #form-container {
+        width: 75%;
+        margin: 20px auto;
+        padding: 15px;
+        box-sizing: border-box;
+
+    }
+
+    #form-container form {
+        margin-left: 0;
+    }
+
+    #form-container input,
+    #form-container select,
+    #form-container textarea {
+        width: 95%;
+        box-sizing: border-box;
+    }
+  #faq-question-container{
+    width:90%;
+    margin:0 auto;
+    gap:18px;
+  }
+  .question-card{
+    width:90%;
+    
+  }
+  .faq-question p{
+    font-size:14px;
+  }
+  .faq-answer p{
+    font-size:12px;
+    line-height:1.5;
+  }
+  /* FAQ QUESTION SUB CONTAINER */
+.question-sub-container {
+    width: 81%;
+    padding: 18px;
+}
+
+.question-sub-container h3 {
+    font-size: 15px;
+}
+
+.question-sub-container p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.question-sub-container button {
+    width: 30%;
+    padding: 9px 12px;
+    font-size: 12px;
+}
+  /* SUBTITLE CONTAINER */
+.subtitle-container {
+    width: 70%;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+#selection-subtitle {
+    margin: 12px;
+    padding: 10px;
+    gap: 12px;
+}
+
+#selection-subtitle h2,
+#selection-subtitle h3,
+#selection-subtitle p {
+    font-size: 13px;
+}
+
+.adventure-experience {
+    gap: 12px;
+    padding: 12px;
+    align-items: center;
+}
+
+.adventure-experience p,
+.adventure-experience span {
+    font-size: 12px;
+}
+
+.adventure-experience button {
+    padding: 2px 3px;
+    font-size: 11px;
+}
+
+.orderSummary-title h3,
+.order-amount p,
+.total-amount p {
+    font-size: 13px;
+}
+
+.order-amount p,
+.total-amount p {
+    margin: 14px;
+}
+
+/* DETAILS SECTION */
+#details-section {
+    width: 70%;
+    padding: 22px;
+    box-sizing: border-box;
+}
+
+.details-title h2 {
+    font-size: 18px;
+}
+
+#details-section label {
+    font-size: 11px;
+}
+
+#details-section input,
+#details-section select,
+#details-section textarea {
+    width: 90%;
+    padding: 11px 12px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.details-button button {
+    width: 75%;
+    padding: 12px 14px;
+    font-size: 12px;
+}
 }
