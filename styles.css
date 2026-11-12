@@ -72,6 +72,7 @@ nav a {
   font-weight: 500;
   position: relative;
   text-transform: uppercase;
+  transition: text-decoration 0.3s ease;
 }
 nav a.active {
   background: #ffffff;
@@ -79,6 +80,9 @@ nav a.active {
   padding: 6px 16px;
   border-radius: 4px;
   font-weight: bold;
+}
+nav a:hover{
+  text-decoration: underline;
 }
 .book-btn {
   padding: 8px 20px;
@@ -1462,6 +1466,7 @@ footer {
         padding: 0 12px;
         gap: 8px;
         align-items: center;
+        position:relative;
     }
 
     /* LOGO WHITE BACKGROUND */
@@ -1500,39 +1505,45 @@ footer {
     }
 
     /* NAVIGATION */
-    header nav {
-        display: flex;
-        align-items: center;
-        gap: 0;
-    }
+  header nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position:absolute;
+    width:220px;
+    padding:15px;
+    background: #14532D;
+    z-index:1000;
+    right:0;
+    top:100%;
+    gap: 12;
+  }
 
-    header nav a {
-        display: none !important;
-    }
+  header nav a {
+    display: block;
+    width:100%;
+    margin:0;
+  }
+  header nav.show{
+    display:flex;
+    flex-direction: column;
+  }
+  header nav.show a{
+    display:block !important;
+  }
 
-    /* HOME LINK */
-    header nav a:first-child {
-        display: inline-flex !important;
-        align-items: center;
-        gap: 5px;
-        color: white !important;
-        font-size: 12px;
-        line-height: 1;
-        text-decoration: none;
-    }
 
-    /* DROPDOWN ARROW */
-    header nav a:first-child::after {
-        content: "⌄";
-        display: inline-block;
-        color: white;
-        font-size: 15px;
-        line-height: 1;
-    }
-
-    header .menu-toggle {
-        display: none !important;
-    }
+  header .menu-toggle {
+    display: block !important;
+    cursor:pointer;
+    background:none;
+    outline:none;
+    color:white;
+    font-size:25px;
+    padding:5px;
+    line-height:1;
+    border:none;
+  }
 
     /* HERO IMAGE */
     #hero-container {
