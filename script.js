@@ -89,6 +89,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
+      // FAQ TOGGLE
+      document.querySelectorAll(".faq-question").forEach(function (question) {
+        question.addEventListener("click", function () {
+          const answer = question.nextElementSibling;
+          const toggle = question.querySelector(".faq-toggle");
+
+          answer.classList.toggle("show");
+
+          if (answer.classList.contains("show")) {
+            toggle.textContent = "−";
+          } else {
+              toggle.textContent = "+";
+            }
+           });
+        });
 
 
     // HOME PAGE BUTTONS
