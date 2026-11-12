@@ -966,10 +966,11 @@ footer {
 }
 #our-activities{
   background-color:#def1f5; 
-  height:420px;
+  height:440px;
 }
 #our-activities h2{
   color:#14532D;
+  padding-top:10px;
 }
 #our-activities h2, h3{
   text-align: center;
