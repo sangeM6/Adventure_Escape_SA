@@ -41,8 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalQuantity = packages.reduce(function (sum, item) {
             return sum + Number(item.quantity || 0);
         }, 0);
+        let discountRate =0;
 
-        const discountRate = totalQuantity > 1 ? 0.10 : 0;
+        if (totalQuantity === 2) {
+            discountRate= 0.05;
+        }else if (totalQuantity === 3){
+            discountRate = 0.10;
+        }else if (totalQuantity > 3) {
+            discountRate = 0.15;
+        }
+
         const discountAmount = subtotal * discountRate;
         const total = subtotal - discountAmount;
 
@@ -53,6 +61,33 @@ document.addEventListener("DOMContentLoaded", function () {
             discountAmount: discountAmount,
             total: total
         };
+    }
+        // RESPONSIVE NAVIGATION DROPDOWN
+
+    const menuToggle = document.querySelector("#menu-toggle");
+    const navigation = document.querySelector("header nav");
+
+    if (menuToggle && navigation) {
+
+        menuToggle.addEventListener("click", function () {
+
+            const isOpen = navigation.classList.toggle("show");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+        });
+
+        navigation.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navigation.classList.remove("show");
+                menuToggle.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+
     }
 
 
