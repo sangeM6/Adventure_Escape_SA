@@ -869,7 +869,7 @@ footer {
   height:480px;
   width:100%;
 }
-.hero-content{
+.hero-content-subContainer{
   position:absolute;
   top:26%;
   left:80%;
@@ -879,12 +879,12 @@ footer {
 
 }
 
-.hero-content h2{
+.hero-content-subContainer h2{
   color:#ffffff;
   font-weight: 400;
   font-size: 30px;
 }
-.hero-content h1{
+.hero-content-subContainer h1{
   color:#d97706;
   font-family: inherit;
   text-align: center;
@@ -892,7 +892,7 @@ footer {
   font-size:25;
  
 }
-.hero-content p{
+.hero-content-subContainer p{
   color:#ffffff;
   font-weight: 100;
 }
