@@ -502,6 +502,16 @@ footer {
   height: 50px;
   width: auto;
 }
+.footer-logo-bottom .logo-text-group {
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.1;
+}
+.footer-logo-bottom .orange-line {
+  width: 18px;
+  height: 2px;
+  margin-bottom: 0;
+}
 .footer-adventure {
   color: #ffffff;
   font-weight: bold;
