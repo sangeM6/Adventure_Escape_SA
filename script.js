@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     if (contactUsButton) {
         contactUsButton.addEventListener("click", function () {
-            window.location.href="contact-us.html";
+            window.location.href="book.html";
         })
     }
 
