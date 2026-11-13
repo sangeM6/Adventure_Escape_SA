@@ -89,21 +89,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
-      // FAQ TOGGLE
-      document.querySelectorAll(".faq-question").forEach(function (question) {
-        question.addEventListener("click", function () {
-          const answer = question.nextElementSibling;
-          const toggle = question.querySelector(".faq-toggle");
+    // FAQ TOGGLE
+    document.querySelectorAll(".faq-question").forEach(function (question) {
+      question.addEventListener("click", function () {
+        const answer = question.nextElementSibling;
+        const toggle = question.querySelector(".faq-toggle");
 
-          answer.classList.toggle("show");
+        if (!answer || !toggle) return;
 
-          if (answer.classList.contains("show")) {
-            toggle.textContent = "−";
-          } else {
-              toggle.textContent = "+";
-            }
-           });
-        });
+        const isOpen = answer.hidden;
+
+        answer.hidden = !isOpen;
+        answer.classList.toggle("show", isOpen);
+        toggle.textContent = isOpen ? "−" : "+";
+        question.setAttribute("aria-expanded", isOpen);
+    });
+});
 
 
     // HOME PAGE BUTTONS

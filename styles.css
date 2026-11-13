@@ -1071,6 +1071,50 @@ footer {
 .contact-item p{
   font-size:10px;
 }
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.faq-question p {
+    margin: 0;
+}
+
+.faq-toggle {
+    flex-shrink: 0;
+    color:#d97706;
+    font-size:22px;
+}
+.faq-answer.show {
+    border-top: 1px solid #1f2933;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.explore-home-button{
+  display:block;
+  margin:20px auto;
+  padding:12px 24px;
+  background-color: #d97706;
+  color:#1f2933;
+  border:none;
+  border-radius:6px;
+}
+.explore-home-button:hover{
+  transform: translateY(-3px);
+}
+#activity-button:hover{
+  transform: translateY(-4px);
+  background-color:#b45309;
+  
+}
+#quote-button:hover{
+  transform: translateY(-4px);
+  color:#14532D;
+  background-color: #FFFFFF;
+}
 /* HAMBURGER BUTTON - HIDDEN ON DESKTOP */
 
 .menu-toggle {
