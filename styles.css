@@ -457,9 +457,16 @@ nav a:hover{
   z-index: 2;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
   align-items: center;
   width: 100%;
   color: white;
+}
+.discount-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 .discount-content h3 {
   font-size: 18px;
