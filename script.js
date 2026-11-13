@@ -89,6 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     }
+
+    const contactForm = document.querySelector("#contact-form");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            window.location.href = "confirmation.html";
+        });
+    }
+
     // FAQ TOGGLE
     document.querySelectorAll(".faq-question").forEach(function (question) {
       question.addEventListener("click", function () {
