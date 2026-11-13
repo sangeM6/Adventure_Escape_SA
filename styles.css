@@ -1109,6 +1109,10 @@ footer {
   border:none;
   border-radius:6px;
 }
+/* .terms-buttons{
+  display:flex;
+  justify-content: space-around;
+} */
 .explore-home-button:hover{
   transform: translateY(-3px);
 }
